@@ -1,0 +1,1306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: white;
+    overflow-x:hidden;
+    min-height: 100vh;
+    background-position: center;
+}
+
+
+
+
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    padding: 0.2rem 10%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+
+
+.logo{
+
+    font-size: 2rem;
+     color:orangered;  
+      text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+
+    font-size: 1.15rem;
+    color:orangered;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+
+.gif {
+
+margin-top: 50px;
+  display:flex;
+width: 100%;
+
+
+
+  
+    justify-content: space-around;
+    align-items: center;
+background-color: antiquewhite;
+
+}
+
+.gif img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+   
+}
+
+.gif-yazi {
+   display: flex;
+  
+    font-family: 'MyriadPro-Regular';
+    font-size: 30px;
+  font-weight: 500;
+    box-shadow: 0px, 10px, 30px, 0 rgba(229, 83, 83, 0.3);
+    text-align: center;
+    font-style: italic;
+
+    color: rgb(2, 0, 36);
+    color: linear-gradient(60deg, rgb(27, 231, 218) 0%, rgb(232, 226, 232) 35%, rgb(102, 154, 163) 100%);
+
+
+}
+
+ 
+
+.food {
+ 
+    text-align: center;
+
+
+
+}
+
+.seciciler {
+    gap: 30px;
+  margin: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+}
+
+.food-a {
+
+    display: inline-block;
+    border: 1px solid bisque;
+    border-radius: 30px;
+    width: 341px;
+    height: 530px;
+margin: 20px;
+    background-color: burlywood;
+    text-decoration: none;
+    transition-duration: 4sn;
+ 
+
+
+
+}
+
+.food-a img {
+    display: inline-block;
+    /* object-fit: cover; */
+    width: 340px;
+    height: 300px;
+    border-radius: 30px;
+    transition: all .40s ease;
+}
+
+
+
+
+.food-a img:hover {
+    width: 345px;
+    overflow: hidden;
+    transform: translateY(-3px) translateX(-5px);
+}
+
+.food-a h1 {
+padding: 10px;
+line-height: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Poppins Regular', sans-serif;
+    align-items: center;
+    color: rgb(13, 56, 81);
+    padding: 10px;
+}
+
+.food-a p {
+    line-height: 30px;
+    font-size: 14px;
+    font-family: 'Poppins Regular', sans-serif;
+    align-items: center;
+    color: rgb(13, 56, 81);
+
+}
+
+.food-a button {
+display: flex;
+
+    border-radius: 20px;
+   padding: 8px;
+    background-color: #000;
+    color: white;
+
+    margin: auto;
+}
+
+.video {
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid antiquewhite;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.video iframe {
+
+    border-radius: 10%;
+}
+
+.diyet-list {
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.diyet-list h1 {
+
+    display: block;
+}
+
+.diyet-cont {
+    display: inline-block;
+    text-align: center;
+
+
+
+}
+
+.diyet-cont a {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 180px;
+    padding: 10px;
+
+    background-color: rgb(238, 238, 238)
+}
+
+.diyet-cont img {
+
+
+
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 20px;
+    gap: 10px;
+    transition: all .40s ease;
+
+}
+
+
+.diyet-cont img:hover{
+ transform: translateY(-3px) translateX(-5px);
+ color: black;
+  }
+
+.diyet-cont a p {
+  
+    text-align: center;
+    color: #000;
+    ;
+    background-color: grey;
+    line-height: 14px;
+    font-size: 15px;
+    background-color: rgb(238, 238, 238);
+    transition: all .40s ease;
+}
+
+.diyet-cont a p:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: black;
+     }
+   
+
+
+/*! ÖNERİLER */
+
+
+.card-container {
+    gap: 15px;
+    position: relative;
+    width: 250px;
+    height: 300px;
+  padding: 10px;
+    margin: 10px;
+    top: 50px;
+}
+
+.menu {
+height: 400px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+ 
+    /* right: 40%; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    transform-style: preserve-3d;
+    transition: all 0.1s ease-out;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px, 10px, 30px, 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    width: 105%;
+    height: 105%;
+}
+
+.card-1 {
+
+    position: absolute;
+    /* top: 0px;
+                    left: 0px; */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 10%;
+
+
+}
+
+.card-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.card-2 {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  background-color: bisque;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.card-2 h1 {
+
+   font-family: 'MyriadPro-Regular';
+    font-size: 24px;
+    font-weight: normal;
+    text-align:center;
+    line-height: 25px;
+   margin: 10px;
+
+  
+}
+
+.card-2 p {
+    font-family: 'MyriadPro-Regular';
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    text-overflow: clip;
+    text-align: center;
+    line-height: 35px;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+
+.card-havuc {
+
+    /* left: 100%; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-out;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px, 10px, 20px, 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.card-havuc:hover {
+    transform: rotateY(180deg);
+    width: 105%;
+    height: 105%;
+}
+
+.card-h-1 {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 10%;
+
+
+}
+
+.card-h-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.card-h-2 {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: bisque;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.card-h-2 h1 {
+    margin: 10px;
+
+    font-family: 'MyriadPro-Regular';
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 25px;
+   
+}
+
+.card-h-2 p{
+    font-family: 'MyriadPro-Regular';
+    font-size: 18px;
+    font-weight: normal;
+    color: brown, salmon, green, blue;
+    text-overflow: clip;
+    text-align: center;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.card-yoga {
+    /* 
+                        left:600px; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-out;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px, 10px, 20px, 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-yoga:hover {
+    transform: rotateY(180deg);
+    width: 105%;
+    height: 105%;
+}
+
+.card-y-1 {
+
+    position: absolute;
+    /* top: 0px;
+                        left: 0px; */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 10%;
+
+
+}
+
+.card-y-1 img {
+    width: 100%;
+    border-radius: 10%;
+    height: 100%;
+}
+.card-y-2  {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color:bisque;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+padding: 10px;
+overflow: hidden;
+}
+
+.card-y-2 h1 {
+    font-family: 'MyriadPro-Regular';
+   
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 25px;
+    margin: 10px;
+
+}
+
+.card-y-2 p {
+    
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'MyriadPro-Regular';
+    text-overflow: clip;
+    text-align: center;
+    line-height: 35px;
+
+}
+
+
+
+.book {
+  
+background-size: cover;
+background-image: url(./paper-1074131_1280.jpg);
+
+justify-content: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-direction: column;
+  margin: 30px;
+border-bottom-right-radius:30px ;
+border-top-right-radius:30px ;
+border-bottom-right-radius:30px ;
+border-top-right-radius:30px ;
+border-bottom-left-radius:30px ;
+border-top-left-radius:30px ;
+border-bottom-left-radius:30px ;
+border-top-left-radius:30px ;
+}
+
+.book h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600px;
+    font-size: 30px;
+    font-family: 'MyriadPro-Regular';
+align-items: center;
+margin-top: 20px;
+
+
+
+
+
+}
+.yorum{
+    display: flex;
+    text-align: center;
+
+
+}
+.yorum p {
+    word-wrap: break-word;
+    margin: 20px;
+  
+   text-align: center;
+   color: #000;
+   font-family: 'MyriadPro-Regular';
+   font-size: 20px;
+   line-height: 40px;
+}
+
+.kitap-menu {
+
+    display: flex;
+    justify-content: center;
+text-align: center;
+
+}
+
+
+.book-list {
+
+    justify-content: space-evenly;
+    display: flex;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.book-list li {
+    display: flex;
+    justify-content: center;
+    border: 1px solid bisque;
+    border-radius: 30%;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(60deg, rgb(249, 98, 4) 0%, rgb(232, 226, 232) 35%, rgb(228, 240, 241) 100%);
+
+}
+
+.book-list li a {
+    text-decoration: none;
+    border-radius: 40%;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    color:grey
+    ;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    overflow: hidden;
+    font-style: italic;
+
+}
+
+
+
+/* /*! İLETİŞİM */
+
+.iletisim {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+
+
+
+
+}
+
+.navigator {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    gap: 20px;
+    padding: 10px;
+margin: 20px;
+  
+
+}
+
+.iletisim-1 {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.iletisim-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+
+}
+
+.iletisim-2 h1 {
+    display: flex;
+    font-family: arial;
+    font-size: 17px;
+    font-weight: bold;
+    color:  rgba(115, 115, 115);
+    text-overflow: clip;
+    text-align: center;
+    line-height: 35px;
+
+}
+
+.iletisim-2 p {
+color:  rgba(115, 115, 115);
+    display: flex;
+    font-family: arial;
+    font-size: 17px;
+    font-weight: normal;
+
+    text-overflow: clip;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+.iletisim-3 {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex-direction: column;
+    width: 320px;
+    height: 380px;
+    border: 1px solid rgba(219, 219, 219);
+    justify-content: center;
+  background-color: rgba(255, 255, 255);
+  border-radius: 1px;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.iletisim-3 input {
+    display: flex;
+    padding: 7px;
+    margin: 10px;
+    gap: 10px;
+    border: 1px solid rgba(219, 219, 219);
+    width: 250px;
+    font: inherit;
+    box-sizing: border-box;
+
+}
+
+
+
+.iletisim-3 input:nth-last-child(2) {
+    width: 250px;
+    height: 100px;
+
+
+}
+
+.iletisim-3 button {
+    padding: 5px;
+    width: 100px;
+    font: inherit;
+    box-sizing: border-box;
+    border: 1px solid rgba(219, 219, 219);
+}
+
+
+
+
+
+/* !sorular */
+
+
+.content-list {
+ 
+   
+    display: flex;
+    justify-content: center;
+align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  margin: auto;
+  gap: 10px;
+
+}
+
+
+
+
+
+
+.content-list a img {
+display: flex;
+
+
+
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.arkafon {
+    background-image: url(./fern-1250903_1280.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arkafon h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+
+}
+
+
+.arkafon p {
+
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+
+
+}
+
+.online-diyet p {
+    font-family: 'MyriadPro-Regular';
+    margin: 20px;
+ 
+    text-align:justify;
+    line-height: 30px;
+    color: #000;
+overflow: hidden;
+}
+.sorular{
+
+display: block;
+
+
+}
+.sorular h1{
+    margin: 20px;
+    font-size: 25px;
+   text-align: center;
+   color: #000;
+   font-family: 'MyriadPro-Regular';
+
+
+
+}
+.sorular p {
+font-size: 18px;
+    margin: 20px;
+
+   text-align:justify;
+   color: #000;
+   font-family: 'MyriadPro-Regular';
+}
+
+    
+
+
+
+
+
+
+
+section{padding: 80px 13% 70px;}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+    background-color:bisque ;
+  
+    left: 0;
+    right: 0;
+    gap: 3.5rem;
+    bottom: 0;;
+}
+.footer-content h4{
+
+    color: black;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+.footer-content li{
+    margin-bottom: 16px;
+    list-style-type: none;
+
+}
+.footer-content li a{
+  display: block;
+color: black;
+font-size: 15px;
+font-weight: 400;
+transition: all .40s ease;
+text-decoration: none;
+}
+.footer-content li a:hover{
+ transform: translateY(-3px) translateX(-5px);
+ color: black;
+  }
+  .footer-content p{
+
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+  }
+  .footer-content img{
+    width: 200px;
+    height: 200px;
+  }
+  .icons a{
+
+
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+margin-left: 10px;
+    transition: all .40s ease;
+  }
+  .icons a:hover{
+
+
+transform: translateY(-5px);
+    color: orangered;
+  
+  }
+
+  .end{
+list-style-type: none;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    margin-right: 18px;
+    transition: all .40s ease;
+
+  }
+  .end a{
+  
+  
+    text-decoration: none;
+
+
+
+  }
+
+  
+@media (max-width:992px) {
+    .gif {
+  
+        height: 480px;
+          padding: 20px;
+         gap: 20px;
+          display:block;
+          justify-content: space-around;
+          align-items: center;
+      background-color: antiquewhite;
+      
+      }
+      .kitap-menu {
+
+        display: inline-block;
+        justify-content: center;
+    text-align: center;
+    
+    }
+  
+    
+    
+    .book-list {
+    
+       
+        display: inline-block;
+       
+       
+    }
+    
+    .book-list li {
+        display: inline-block;
+       
+   
+       
+      
+    
+
+}
+.iletisim-1 {
+    margin: 30px;
+    display: inline-block;
+    justify-content: space-evenly;
+
+}
+
+
+
+.content-list {
+ 
+   
+    display: block;
+
+ 
+ text-align: center;
+padding: 20px;
+  margin: auto;
+
+}
+
+
+
+
+
+
+.content-list a img {
+display: inline-block;
+
+
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+   
+  text-align: center;
+    left: 0;
+    right: 0;
+    gap: 3.5rem;
+    bottom: 0;
+}
+
+.diyet-list {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+
+  
+
+}
+
+
+
+
+
+@media (max-width:695px){
+
+
+
+
+
+.header{
+    display:inline-block;
+        position: absolute;
+      
+       
+       
+     
+     
+     text-align: center;
+       
+       ;
+  padding: 5px;
+}
+    
+    
+    
+    .logo{ 
+        display:flex;
+        font-size: 1.4rem;
+        
+    
+    text-align: center;
+    }
+    .navbar a{
+        display:inline-block;
+    text-align: center;
+        font-size: 1rem;
+       
+       margin-left: 20px;
+
+        margin-left: rem;
+   
+    
+}
+.gif {
+
+   
+      display:block;
+    width: 100%;
+    margin-top: 40px;
+
+
+    
+
+    
+    }
+    
+    .gif img {
+        display: block;
+        width: 250px;
+        height: 250px;
+       text-align: center;
+       
+   margin: auto;
+    }
+    
+    .gif-yazi {
+       display: block;
+      
+  text-align: center;
+        font-size: 20px;
+    
+      
+        
+        
+
+    
+    
+    }
+    .food-a {
+
+    
+      
+        width: 280px;
+        height: 400px;
+    margin-right: 24px;
+      
+     
+    
+    
+    
+    }
+    
+    
+    .food-a img {
+      
+        width: 280px;
+        height: 200px;
+      
+    }
+    .card-container {
+    gap: 10px;
+    position: relative;
+    width: 250px;
+    height: 300px;
+  padding: 0px;
+    margin: auto;
+    top: 40px;
+
+}
+.food-a img:hover {
+    width: 285px;
+    overflow: hidden;
+    transform: translateY(-3px) translateX(-5px);
+}
+
+.food-a h1 {
+text-align: center;
+   margin: 10px;
+    font-size: 18px;
+ 
+    align-items: center;
+  
+
+}
+
+.food-a p {
+text-align: center;
+    font-size: 12px;
+    font-family: 'Poppins Regular', sans-serif;
+ 
+
+}
+
+.food-a button {
+
+
+    text-align: center;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #000;
+    color: white;
+    margin: 8px;
+
+}
+
+    .card-2{
+        width:100px;
+        height: 270px;
+      
+    }
+    .card-h-2{
+        width:100px;
+        height: 270px;
+     
+      
+    }
+    .card-y-2{
+        width:100px;
+        height: 270px;
+      
+    }
+    .card-y-2 p {
+
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 5;
+       
+    
+  
+    
+    }
+    .card-h-2 p{ 
+        font-size: 10px;
+        line-height: 1.4;
+        padding: 5;
+}    
+.card-2 p{ 
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 5;
+}    
+
+.card-y-2 h1 {
+
+    font-size: 14px;
+       
+    margin: 0;
+       
+    
+  
+    
+    }
+    .card-h-2 h1{ 
+        font-size: 14px;
+        margin: 0;
+}    
+.card-2 h1{ 
+    font-size: 14px;
+    margin: 0;
+}    
+ 
+   
+ 
+
+
+.card-1 img {
+    width:100px;
+    height: 270px;
+    border-radius: 10%;
+}
+
+  
+.card-h-1 img {
+    width:100px;
+    height: 270px;
+    border-radius: 10%;
+}
+.card-y-1 img {
+    width:100px;
+    height: 270px;
+    border-radius: 10%;
+}
+.kitap-menu {
+
+ 
+    justify-content: center;
+text-align: center;
+
+}
+
+
+.book-list {
+
+   
+  
+    list-style-type: none;
+    margin:10px;
+}
+
+.book-list li {
+ 
+    border-radius: 30%;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+padding: 15px;
+
+}
+
+.book-list li a {
+  
+    border-radius: 40%;
+    width: 100px;
+    height: 80px;
+   
+  
+   text-align: center
+    ;
+    font-size: 13px;
+   
+}
+.arkafon h1 {
+  
+    font-size: 35px;
+ margin-top: 50px;
+
+}
+
+
+.arkafon p {
+
+    font-size: 20px;
+   
+   
+
+
+}
+
+
+}
